@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.tieland.melon</groupId>
+    <artifactId>melon</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>org.tieland.melon</groupId>
+  <artifactId>melon-zuul</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>melon-zuul</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <melon-ribbon.version>1.0-SNAPSHOT</melon-ribbon.version>
+    <melon-supports.version>1.0-SNAPSHOT</melon-supports.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.tieland.melon</groupId>
+      <artifactId>melon-ribbon</artifactId>
+      <version>${melon-ribbon.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.tieland.melon</groupId>
+      <artifactId>melon-supports</artifactId>
+      <version>${melon-supports.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+  </dependencies>
+</project>

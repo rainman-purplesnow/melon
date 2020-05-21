@@ -1,0 +1,23 @@
+server:
+  port: 6666
+spring:
+  application:
+    name: melon-admin
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.100:3306/melon?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: sgay
+    password: sgayABC123!
+    connection-timeout: 10000
+    maximum-pool-size: 20
+    minimum-idle: 10
+    connection-test-query: select 1
+  redis:
+    cluster:
+      nodes:
+       - 192.168.1.201:7000
+       - 192.168.1.201:7001
+       - 192.168.1.201:7002
+       - 192.168.1.201:7003
+       - 192.168.1.201:7004
+       - 192.168.1.201:7005
